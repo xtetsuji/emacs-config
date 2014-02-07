@@ -15,6 +15,8 @@
                  "server.el"
                  "misc.el"
                  "my.el" ;;; add at 2014/02/03
+                 "elscreen.el"
+                 "wanderlust.el"
                  )))
   (dolist (conf conf-list)
     (load (concat user-emacs-directory "conf/" conf))))
