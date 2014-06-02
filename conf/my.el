@@ -8,8 +8,10 @@
                   'append)
 (add-to-list 'default-frame-alist '(font . "fontset-menlokakugo"))
 
-;; tool-bar-mode
+;; ツールバーは表示しない
 (tool-bar-mode 0)
 
-;; Disable cursor blink
+;; カーソルのブリンクは抑止
 (blink-cursor-mode -1)
+
+

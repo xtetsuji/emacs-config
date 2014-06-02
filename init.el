@@ -18,6 +18,7 @@
                  "elscreen.el"
                  "wanderlust.el"
                  "cperl-mode.el"
+                 "10keyboard.el"
                  )))
   (dolist (conf conf-list)
     (load (concat user-emacs-directory "conf/" conf))))

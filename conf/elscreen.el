@@ -3,6 +3,6 @@
   (el-get 'sync '(apel)))
 (el-get 'sync '(elscreen))
 (setq elscreen-prefix-key (kbd "C-z"))
-(setq elscreen-display-tab 4)
+(setq elscreen-display-tab 8)
 (when (require 'elscreen nil 'noerror)
   (elscreen-start))
