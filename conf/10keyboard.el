@@ -15,7 +15,7 @@
 (global-set-key "\M-?" 'help-for-help)
 (global-set-key "\C-x!" 'quickrun)
 (global-set-key "\C-x\M-g" 'grep-find)
-(global-set-key "C-x/" 'comment-region)
+(global-set-key "\C-x/" 'comment-region)
 (auto-compression-mode t) ;; これでinfoが文字化けしない
 ;(delete-selection-mode t) ;; これでリージョン部を入力で置き換えられる
 (column-number-mode 1)    ;; 列数の表示
