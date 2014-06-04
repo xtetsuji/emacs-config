@@ -28,10 +28,10 @@
 	cperl-tab-always-indent t
 	indent-tabs-mode nil))
 
-(defun my-toggle-miyagawa ()
-  "miyagawa さんのコーディングルールに cperl-mode を準拠します"
+(defun my-cperl-twospace ()
+  "twospace のコーディングルールに cperl-mode を準拠します"
   (interactive)
-  (setq my-cperl-current-flavor "miyagawa"
+  (setq my-cperl-current-flavor "twospace"
 	cperl-close-paren-offset -2
 	cperl-continued-statement-offset 2
 	cperl-indent-level 2
@@ -45,7 +45,9 @@
   (cond ((string= my-cperl-current-flavor "g4")
 	 (progn (my-cperl-pbp) (message "change pbp style")))
 	((string= my-cperl-current-flavor "pbp")
-	 (progn (my-cperl-g4) (message "change g4 style")))
+	 (progn (my-cperl-twospace) (message "change twospace style")))
+        ((string= my-cperl-current-flavor "twospace")
+         (progn (my-cperl-g4) (message "chage g4 style")))
 	(t (my-cperl-pbp) (message "change pbp style"))))
 ;;; 書き方がダサい...
 
