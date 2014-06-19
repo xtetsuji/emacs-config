@@ -15,7 +15,7 @@
                  "perl-mode.el"
                  ;;"perl-completion.el"
                  ;;"perl-flymake.el"
-                 "popwin.el"
+                 ;;"popwin.el"
                  "quickrun.el"
                  ;;"helm-project.el"
                  "server.el"
