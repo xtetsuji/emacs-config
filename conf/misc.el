@@ -22,6 +22,10 @@
 ;; 対応する括弧を光らせる
 (show-paren-mode 1)
 
+; バッファを保存する
+(desktop-save-mode 1)
+(setq desktop-files-not-to-save "\\(^/[^/:]*:\\|\\.diary$\\|\\.png$\\|\\.jpg$\\|\\.gif$\\|\\.csv$\\)")
+
 ;; Cocoaの人向け
 
 ;;;; metaキーを入れ替える
