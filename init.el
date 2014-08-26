@@ -1,3 +1,9 @@
+;; laad-path
+(add-to-list 'load-path "~/.emacs.d/elisp")
+
+;; specify alternate packages
+;(load "pukiwiki-mode.el")
+
 (let*
     ((user-emacs-directory
       (substring (or load-file-name "~/.emacs.d/init.el") 0 -7))
@@ -9,8 +15,8 @@
                  "perl-mode.el"
                  ;;"perl-completion.el"
                  ;;"perl-flymake.el"
-                 "popwin.el"
-                 "quickrun.el"
+                 ;;"popwin.el"
+                 ;;"quickrun.el"
                  ;;"helm-project.el"
                  "server.el"
                  "misc.el"
@@ -18,6 +24,11 @@
                  "elscreen.el"
                  "wanderlust.el"
                  "cperl-mode.el"
+                 "00setting.el"
+                 "10keyboard.el"
+                 "50cperl-mode.el"
+                 "50css-mode.el"
+                 "50php-mode.el"
                  )))
   (dolist (conf conf-list)
     (load (concat user-emacs-directory "conf/" conf))))
