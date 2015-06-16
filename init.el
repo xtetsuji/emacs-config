@@ -38,7 +38,7 @@
 (set-face-attribute 'default nil :family "Menlo" :height 140)
 (set-fontset-font (frame-parameter nil 'font)
                   'japanese-jisx0208
-                  (font-spec :family "Hiragino Kaku Gothic ProN" :size 14))
+                  (font-spec :family "Hiragino Kaku Gothic ProN" :size 16))
 
 ; あ い う え お
 ; aa ii uu ee oo
