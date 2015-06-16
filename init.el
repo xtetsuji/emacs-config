@@ -32,3 +32,13 @@
                  )))
   (dolist (conf conf-list)
     (load (concat user-emacs-directory "conf/" conf))))
+
+;;; 暫定的なフォント設定 on Mac OS X Emacs 24
+;;; see: http://blog.livedoor.jp/tek_nishi/archives/8590439.html
+(set-face-attribute 'default nil :family "Menlo" :height 140)
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0208
+                  (font-spec :family "Hiragino Kaku Gothic ProN" :size 14))
+
+; あ い う え お
+; aa ii uu ee oo
