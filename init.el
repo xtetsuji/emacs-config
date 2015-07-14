@@ -24,6 +24,7 @@
                  "elscreen.el"
                  "wanderlust.el"
                  "cperl-mode.el"
+                 ;"emoji-fontset.el"
                  "00setting.el"
                  "10keyboard.el"
                  "50cperl-mode.el"
